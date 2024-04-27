@@ -1,0 +1,153 @@
+body {
+    background-image: url('img/PS4.jpg');
+
+}
+
+header {
+    background: rgba(0, 150, 250,.1);
+    width: 600px;
+    height: 10x;
+    padding-top: 0%;
+    margin: 0px;
+    text-align: center;
+    opacity: 0,99px;
+}
+
+img {
+    padding: 1px;
+    margin: auto;
+}
+
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(0, 255, 179);
+    text-align: center;
+}
+
+h3 {
+    color: rgb(0, 255, 179);
+    font-size: 1.6em;
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width:300px) {
+    body {
+
+        width: 100%;
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width:300px) {
+    body {
+
+        width: 100%;
+        font-size: 1em;
+    }
+
+}
+
+
+@media screen and (max-width:300px) {
+    body {
+
+        width: 50%;
+        font-size: 1em;
+
+    }
+
+}
+
+#main-container {
+    perspective: 400px;
+    position: absolute;
+    width: 200px;
+    height: 400px;
+    margin: 200px;
+    
+}
+
+@keyframes carousel-animation {
+    0% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 0deg);
+    }
+
+    45% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 160deg);
+    }
+
+    55% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 160deg);
+    }
+
+    100% {
+        transform: translateZ(-300px) rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+#tile-container {
+    transform: translateZ(-300px) rotate3d(0, 1, 0, 0deg);
+    transform-style: preserve-3d;
+    animation-name: carousel-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+.tile {
+    width: 300px;
+    height: 220px;
+    border-radius: 8px;
+    position: absolute;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px;
+    opacity: 0.50px;
+}
+
+
+#tile-1 {
+
+    transform: rotateY(20deg) translateZ(400px);
+}
+
+#tile-2 {
+
+    transform: rotateY(72deg) translateZ(400px);
+}
+
+#tile-3 {
+
+    transform: rotateY(134deg) translateZ(400px);
+}
+
+#tile-4 {
+
+    transform: rotateY(200deg) translateZ(400px);
+}
+
+#tile-5 {
+
+    transform: rotateY(260deg) translateZ(400px);
+}
+
+#tile-6 {
+
+    transform: rotateY(320deg) translateZ(400px);
+}
+
+#tile-7 {
+
+    transform: rotateY(320deg) translateZ(400px);
+}
+
